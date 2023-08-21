@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calling Nurse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="nursePage">
+    <img src="Back.png" class="backBtn" alt="">
+    <section class="wrapper">
+        <div class="container display_flex_col">
+                <h2 style="color: white;font-size: calc(60/1920 * 100vw);">Nurse Will be coming shortly</h2>
+              <p style="color: white;font-size: calc(60/1920 * 100vw);"> Wait Time: <span></span> </p> 
+        </div>
+    </section>
+    <script>
+        let timer=document.querySelector("p")
+        let time=document.querySelector("p span")
+        let timing=70;
+        setInterval(() => {
+            timing=timing-1
+            time.innerText=timing.toFixed()
+        }, 1000);
+    </script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

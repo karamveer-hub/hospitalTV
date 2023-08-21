@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="indexPage">
+
+    <section class="wrapper">
+        <div class="container display_flex banner">
+            <h1 id="heading"></h1>
+        </div>
+        <div class="container display_flex_col">
+            <div class="inside_div display_flex">
+                <!-- fully.startApplication('com.apps.livetv') -->
+                <a href="livetv.html"  id="liveTv">
+                    <img src="livetv.png" alt="">
+                    <p>Press OK to play live TV</p>
+                    <p>Live TV</p>
+                    <img src="bglivetv2.png" alt="">
+                </a>
+                <a href="smrttv.html">
+                    <img src="smarttv.png" alt="">
+                    <p>Press OK to go to smart TV options</p>
+                    <p>Smart TV</p>
+                    <img src="bglivetv2.png" alt="">
+                </a>
+                <a href="orderfood.html">
+                    <img src="orderfood.png" alt="">
+                    <p>Press OK to view the food menu</p>
+                    <p>Order Food</p>
+                    <img src="bglivetv2.png" alt="">
+                </a>
+                <a href="nurse.html">
+                    <img src="nurse.png" alt="">
+                    <p>Press OK to call Nurse</p>
+                    <p>Call Nurse</p>
+                    <img src="bgnurse.png" alt="">
+                </a>
+                <a href="chart.html">
+                    <img src="charts-prescriptions.png" alt="">
+                    <p>Press OK to view your 
+                        Charts/Prescriptions</p>
+                        <p>Charts/prescriptions</p>
+                    <img src="bgchart.png" alt="">
+                </a>
+                <a href="notices.html">
+                    <img src="notices.png" alt="">
+                    <p>Press OK to view notices</p>
+                    <p>Notices</p>
+                    <img src="bglivetv2.png" alt="">
+                    
+                </a>
+            
+        </div>
+    </section>
+
+
+    <!-- <script>
+
+        let p=document.querySelector(".check")
+
+        document.addEventListener("keypress",(e)=>{
+            e.preventDefault()
+            p.innerText=e.keyCode
+            console.log(e.keyCode)
+        })
+        let dateDisplay = document.querySelector("#date")
+        let temp = document.querySelector("#temp")
+        let weather = document.querySelector("#weather")
+        let weatherImg = document.querySelector("#weather img")
+        let currrentdate = new Date()
+        let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+        let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        display(currrentdate.getDate(), currrentdate.getDay(), currrentdate.getMonth())
+        function display(date, day, month) {
+            console.log(date, day, month)
+            dateDisplay.innerText = `${days[day]} , ${months[month]}  ${date}`
+        }
+
+        let api = `d860a7dcd67b8b77fc4139aa8bca2d17`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=${api}`
+        let data = fetch(url).then(res => res.json()).then(data => {
+            tempFunc(data)
+        })
+
+        function tempFunc(data) {
+            console.log(data)
+            temp.innerHTML = parseInt(data.main.temp - 273) + `<span>&#176;</span> C`
+            if (data.weather[0].main == 'Clouds') {
+                weather.innerHTML = `<img src='cloud (1).png'/> ${data.weather[0].main} `
+            }
+            else if (data.weather[0].main.includes("haze")) {
+                weather.innerHTML = `<img src='sun.png'/> ${data.weather[0].main} `
+            }
+            else if (data.weather[0].main.includes("rain")) {
+                weather.innerHTML = `<img src='rain.png'/> ${data.weather[0].main} `
+            } else {
+                weather.innerHTML = `${data.weather[0].main} `
+            }
+        }
+
+        
+
+    </script> -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>

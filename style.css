@@ -1,0 +1,160 @@
+:root{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+input{
+    background: white;
+    padding: calc(20/1920 * 100vw);
+    border-radius: 4px;
+    font-size: calc(22/1920 * 100vw);
+    border: none;
+    outline: none;
+}
+.display_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display_flex_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('poppins-regular-webfont.woff2') format('woff2'),
+         url('poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html{
+    font-family: 'poppinsregular';
+}
+
+
+
+body{
+    height: 100vh;
+}
+.wrapper{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+}
+.container:nth-child(1){
+    height: 75%;
+    width: 100%;
+}
+.container:nth-child(1) h1{
+   font-size: calc(70/1920 * 100vw);
+   color: white;
+   text-align: center;
+   width: 100%;
+}
+
+.container:nth-child(2){
+    height: 25%;
+}
+.container .inside_div{
+    width: 100%;
+    background-color: white;
+}
+.container .inside_div a{
+    padding: calc(20/1920 * 100vw);
+    border-radius: calc(20/1920 * 100vw);
+    position: relative;
+    text-decoration: none;
+}
+.container .inside_div a:hover 
+{
+    transform: scale(1.1);
+    border: 2px solid #0E60FF;
+}
+.container .inside_div a img:nth-child(1){
+    margin: 0 auto;
+    display: block;
+}
+.container .inside_div a p:nth-child(3){
+    text-align: center;
+    margin: 5px 0;
+    color: black;
+}
+.container .inside_div a p:nth-child(2),.container .inside_div a img:nth-child(4){
+    display: none;
+}
+.container .inside_div a img:nth-child(4){
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/* pages */
+
+#indexPage{
+    background:url('bglivetv2.png')
+}
+#nursePage{
+    background:url('nursePageBg.png')
+}
+#noticePage{
+    background:url('notice.png')
+}
+#smarttv{
+    background:url('bgsmarttv.png')
+}
+#livetv{
+    background:url('bglivetv.png')
+}
+#orderfood{
+    background:url('bgorderfood.png')
+}
+#charts{
+    background:url('bgcharts.png')
+}
+
+
+
+
+
+
+.backBtn {
+    position: absolute !important;
+    top: 2% !important;
+    left: 2% !important;
+    z-index: 999;
+}
+.menuPage #nurseCallingDiv{
+    align-items: flex-start;
+    padding: 40px;
+    justify-content: space-evenly;
+    background-image: url('Frame 31 (4).png')
+    ;background-size: cover;
+    background-position: center;
+    ;text-align: center;
+}
+.menuPage #nurseCallingDiv .display_flex .display_flex_col{
+  width: 30%;
+  margin: 40px;
+}

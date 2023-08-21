@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- <section class="wrapper">
+        <div class="container display_flex">
+            <div class="display_flex">
+                <p id="date"></p>
+                <p style="margin-left:40px" id="temp"></p>
+            </div>
+            <p id="weather"><img src="" alt=""></p>
+        </div>
+        <div class="container display_flex_col">
+            <div class="inside_div display_flex">
+                <a href="#"  id="liveTv">
+                    <img src="Live_TV.png" alt="">
+                    <img src="Live_TV_blur.png" alt="">
+
+                </a>
+                <a href="nurse.html">
+                    <img src="Nurse.png" alt="">
+                    <img src="Nurse_blur.png" alt="">
+                </a>
+                <a href="emergency.html">
+                    <img src="emergency.png" alt="">
+                    <img src="Emergency_blur.png" alt="">
+                </a>
+            </div>
+            <div class="inside_div display_flex">
+
+                <a href="menu.html">
+
+                    <img src="order_food.png" alt="">
+                    <img src="order_food_blur.png" alt="">
+                </a>
+                <a href="notices.html">
+                    <img src="important_notices.png" alt="">
+                    <img src="important_notices_blur.png" alt="">
+
+                </a>
+                <a href="chart.html">
+                    <img src="view_charts.png" alt="">
+                    <img src="view_charts_blur.png" alt="">
+
+
+                </a>
+            </div>
+        </div>
+    </section> -->
+    <video src="videoClip.mp4"   style="position: absolute;height: 100%;width: 100%;top: 0;" id="videoPlay" ></video>
+
+
+    <script>
+
+        // let p=document.querySelector(".check")
+
+        // document.addEventListener("keypress",(e)=>{
+        //     e.preventDefault()
+        //     p.innerText=e.keyCode
+        //     console.log(e.keyCode)
+        // })
+        // let dateDisplay = document.querySelector("#date")
+        // let temp = document.querySelector("#temp")
+        // let weather = document.querySelector("#weather")
+        // let weatherImg = document.querySelector("#weather img")
+        // let currrentdate = new Date()
+        // let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+        // let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        // display(currrentdate.getDate(), currrentdate.getDay(), currrentdate.getMonth())
+        // function display(date, day, month) {
+        //     console.log(date, day, month)
+        //     dateDisplay.innerText = `${days[day]} , ${months[month]}  ${date}`
+        // }
+
+        // let api = `d860a7dcd67b8b77fc4139aa8bca2d17`
+        // let url = `https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=${api}`
+        // let data = fetch(url).then(res => res.json()).then(data => {
+        //     tempFunc(data)
+        // })
+
+        // function tempFunc(data) {
+        //     console.log(data)
+        //     temp.innerHTML = parseInt(data.main.temp - 273) + `<span>&#176;</span> C`
+        //     if (data.weather[0].main == 'Clouds') {
+        //         weather.innerHTML = `<img src='cloud (1).png'/> ${data.weather[0].main} `
+        //     }
+        //     else if (data.weather[0].main.includes("haze")) {
+        //         weather.innerHTML = `<img src='sun.png'/> ${data.weather[0].main} `
+        //     }
+        //     else if (data.weather[0].main.includes("rain")) {
+        //         weather.innerHTML = `<img src='rain.png'/> ${data.weather[0].main} `
+        //     } else {
+        //         weather.innerHTML = `${data.weather[0].main} `
+        //     }
+        // }
+
+        let video = document.querySelector("#videoPlay")
+        let liveTv = document.querySelector("#liveTv")
+
+        function videoPlay() {
+            video.play()
+            video.addEventListener("ended", videEndFunc)
+
+        }
+        function videEndFunc() {
+            // video.style.display = "none"
+            // video.pause()
+            fully.startApplication('com.apps.livetv')
+        }
+        videoPlay()
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="file:///sdcard/hospitalUI/style.css">
+    <style>
+        button {
+            outline: none;
+            border: none;
+        }
+
+        li {
+            margin: 20px 0;
+            font-size: calc(24/1920 * 100vw);
+        }
+
+        .todaysDiv {
+            justify-content: flex-start;
+            height: 40%;
+        }
+
+        .todays {
+            height: 100%;
+            /* padding: 20px 0; */
+        }
+
+        .todays h2 {
+            /* background: #f3f3f3; */
+            /* padding: 20px; */
+            margin: 10px 0;
+            font-size: calc(20/1920 * 100vw);
+            font-weight: normal;
+        }
+
+        .menuDivMain {
+            align-items: flex-start;
+        }
+
+        #menuDiv {
+            width: 100%;
+            height: 100%;
+            justify-content: space-evenly !important;
+        }
+
+        #menuDiv>div {
+            justify-content: space-between !important;
+        }
+
+        .item {
+            justify-content: space-between;
+        }
+
+        p:nth-child(2) {
+            font-size: calc(20/1920 * 100vw) !important;
+            text-align: center;
+            color: black !important;
+            margin: 10px 0;
+        }
+
+        .data {
+            height: 60%;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            justify-content: space-between;
+            align-items: center;
+            padding: calc(30/1920 * 100vw);
+        }
+
+        .sidebar div img {
+            margin: 10px;
+        }
+
+        .banner {
+            background-image: url('file:///sdcard/hospitalUI/images/food.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            align-items: flex-start;
+            padding: calc(30/1920 * 100vw);
+        }
+
+        .sideBarImg {
+            width: calc(60/1920 * 100vw);
+            height: calc(60/1920 * 100vw);
+        }
+
+        .menu.container {
+            /* display: flex; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container menuPage display_flex_col" style="height: 100%;">
+            <div id="nurseCallingDiv" class="display_flex_col">
+                <h2 style="color: white;">Snacks</h2>
+                <div class="display_flex">
+                    <div class="display_flex_col">
+                        <img src="file:///sdcard/hospitalUI/images/Frame 40 (4).png" alt="">
+                        <p>Veg Sandwich</p>
+                        <button
+                            style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                            Now</button>
+                    </div>
+                    <div class="display_flex_col">
+                        <img src="file:///sdcard/hospitalUI/images/Frame 40 (5).png" alt="">
+                        <p>Pav Bhaji</p>
+                        <button
+                            style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                            Now</button>
+                    </div>
+                    <div class="display_flex_col">
+                        <img src="file:///sdcard/hospitalUI/images/Frame 40 (6).png" alt="">
+                        <p>Poha</p>
+                        <button
+                            style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="display_flex" style="background-color: white; color: black;height: 100%;">
+                <div class="display_flex_col sidebar" style="background:#464A4D;height: 100%;width: 7%;">
+                    <img src="file:///sdcard/hospitalUI/images/Back.png" alt="" class="sideBarImg backBtn" >
+                    <div class="display_flex_col">
+                        <img src="file:///sdcard/hospitalUI/images/Search (1).png" alt="" class="sideBarImg">
+                        <img src="file:///sdcard/hospitalUI/images/Fruits.png" alt="" class="sideBarImg">
+                        <img src="file:///sdcard/hospitalUI/images/Snacks.png" alt="" class="sideBarImg">
+                        <img src="file:///sdcard/hospitalUI/images/Meal.png" alt="" class="sideBarImg">
+                        <img src="file:///sdcard/hospitalUI/images/Beverages.png" alt="" class="sideBarImg">
+                    </div>
+                    <img src="file:///sdcard/hospitalUI/images/Beverages.png" alt="" style="visibility: hidden;">
+
+                </div>
+                <div class="main" style="width: 93%; height: 100%;">
+
+                    <div class="display_flex_col banner" style="height: 40%; width: 100%;color: white;">
+                        <div class="display_flex_col data">
+
+                            <h2 style="color: white; font-size: calc(50/1920 * 100vw);">Hello, <span>Patient's
+                                Name</span></h2>
+                                <h2 style="color: white;font-size:calc(30/1920 * 100vw);">Currently Serving: <span>Healthy Sandwich
+                                    Breakfast</span></h2>
+                                    <button
+                                    style="padding: 10px; background:white;font-size:calc(30/1920 * 100vw);font-weight: bold;;border-radius: 2px;">Order
+                                    Now</button>
+                                    <p style="font-size: calc(24/1920 * 100vw);color: white;">Dinner will be served after 7PM</p>
+                                    <h2 style="width: 100%;font-size: calc(30/1920 * 100vw)">Todays</h2>
+                                </div>
+                        <div class="display_flex todaysDiv" style="width: 100%;">
+                            <div style="width: 50%;" class="todays">
+                                <h2>Morning: <span>
+                                        Daliya , Doodh
+                                    </span></h2>
+
+                                <h2>Lunch: <span>
+                                        Chaval Dal , Dahi ,Salad
+
+                                    </span></h2>
+                                <h2>Dinner: <span>
+                                        Roti , Dal Palak
+
+                                    </span></h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="display_flex_col menuDivMain" style="height: 60%;width: 100%;padding: 40px 20px;">
+                        <p style="color: black;font-size: 30px;">Fresh Fruits</p>
+                        <div class="display_flex_col menuTable" style="width: 100%;">
+                            <div id="#menuDiv" class="display_flex" style="width: 100%;">
+                                <div class="display_flex_col item" style="height: 100%; margin: 20px; width: 250px;">
+                                    <img src="file:///sdcard/hospitalUI/images/Frame 40.png" alt="" width="100%">
+                                    <p>Peeled and sliced apple (1 Apple)</p>
+                                    <button
+                                        style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                                        Now</button>
+
+                                </div>
+                                <div class="display_flex_col item" style="height: 100%; margin: 20px; width: 250px;">
+                                    <img src="file:///sdcard/hospitalUI/images/Frame 40 (1).png" alt="" width="100%">
+                                    <p>Peeled and sliced apple (1 Orange)</p>
+                                    <button
+                                        style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                                        Now</button>
+
+                                </div>
+                                <div class="display_flex_col item" style="height: 100%; margin: 20px; width: 250px;">
+                                    <img src="file:///sdcard/hospitalUI/images/Frame 40 (2).png" alt="" width="100%">
+                                    <p>Peeled and sliced Banana (2 Banana)</p>
+                                    <button
+                                        style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                                        Now</button>
+
+                                </div>
+                                <div class="display_flex_col item" style="height: 100%; margin: 20px; width: 250px;">
+                                    <img src="file:///sdcard/hospitalUI/images/Frame 40 (3).png" alt="" width="100%">
+                                    <p>Mix Fruit Salad</p>
+                                    <button
+                                        style="padding: 10px; background:#464A4D;font-weight: bold;color: white;margin: 10px 0;width: 100%;">Order
+                                        Now</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+        <img src="file:///sdcard/hospitalUI/images/Back.png" class="backBtn" alt="">
+    </div>
+    <script src="file:///sdcard/hospitalUI/index.js"></script>
+
+    <script>
+        let nursingDiv = document.querySelector(".menuPage #nurseCallingDiv")
+        let selectMenu = document.querySelectorAll(".menuPage #nurseCallingDiv .display_flex .display_flex_col")
+        selectMenu.forEach(item => {
+            item.addEventListener("click", (e) => {
+                nursingDiv.innerHTML = `<h1 style="color:white">Your ${e.currentTarget.children[1].innerText} is on the way</h1>`
+            })
+        })
+    </script>
+</body>
+
+</html>
