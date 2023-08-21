@@ -87,11 +87,27 @@ body{
     text-decoration: none;
     width: 15%;
 }
+.container .inside_div div{
+    margin: calc(20/1920 * 100vw);
+    border-radius: calc(20/1920 * 100vw);
+    position: relative;
+    text-decoration: none;
+    width: 15%;
+}
 .container .inside_div a:hover
 {
     transform: scale(1.1);
 }
+.container .inside_div div:hover
+{
+    transform: scale(1.1);
+}
 .container .inside_div a img:hover
+{
+    border: 2px solid #0E60FF;
+    border-radius: 20px;
+}
+.container .inside_div div img:hover
 {
     border: 2px solid #0E60FF;
     border-radius: 20px;
@@ -110,6 +126,23 @@ body{
     display: none;
 }
 .container .inside_div a img:nth-child(4){
+    background-position: center;
+    background-size: cover;
+}
+.container .inside_div div img:nth-child(1){
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+.container .inside_div div p:nth-child(3){
+    text-align: center;
+    margin: 5px 0;
+    color: black;
+}
+.container .inside_div div p:nth-child(2),.container .inside_div div img:nth-child(4){
+    display: none;
+}
+.container .inside_div div img:nth-child(4){
     background-position: center;
     background-size: cover;
 }
