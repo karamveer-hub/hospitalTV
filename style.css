@@ -80,15 +80,19 @@ body{
     background-color: white;
 }
 .container .inside_div a{
-    padding: calc(20/1920 * 100vw);
+    margin: calc(20/1920 * 100vw);
     border-radius: calc(20/1920 * 100vw);
     position: relative;
     text-decoration: none;
 }
-.container .inside_div a:hover 
+.container .inside_div a:hover
 {
     transform: scale(1.1);
+}
+.container .inside_div a img:hover
+{
     border: 2px solid #0E60FF;
+    border-radius: 20px;
 }
 .container .inside_div a img:nth-child(1){
     margin: 0 auto;
