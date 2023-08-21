@@ -42,14 +42,12 @@ input{
 html{
     font-family: 'poppinsregular';
 }
-
-
-
 body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .wrapper{
     background-size: cover;
@@ -122,25 +120,25 @@ body{
 /* pages */
 
 #indexPage{
-    background:url('bglivetv2.png')
+    background-image:url('bglivetv2.png')
 }
 #nursePage{
-    background:url('nursePageBg.png')
+    background-image:url('nursePageBg.png')
 }
 #noticePage{
-    background:url('notice.png')
+    background-image:url('notice.png')
 }
 #smarttv{
-    background:url('bgsmarttv.png')
+    background-image:url('bgsmarttv.png')
 }
 #livetv{
-    background:url('bglivetv.png')
+    background-image:url('bglivetv.png')
 }
 #orderfood{
-    background:url('bgorderfood.png')
+    background-image:url('bgorderfood.png')
 }
 #charts{
-    background:url('bgcharts.png')
+    background-image:url('bgcharts.png')
 }
 
 
